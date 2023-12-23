@@ -9,7 +9,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: "https://discord.com",
   },
-  docsRepositoryBase: "https://github.com/shuding/nextra-docs-template",
+  docsRepositoryBase: "https://github.com/maylogger/juchunko.com",
   footer: {
     text: "©2024 JUCHUNKO Corp. All rights reserved.",
   },
