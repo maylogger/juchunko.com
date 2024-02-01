@@ -14,6 +14,10 @@
   }
 }
 
+body {
+  @apply !pr-[--removed-body-scroll-bar-size];
+}
+
 @layer components {
   blockquote {
     @apply !not-italic;
@@ -31,7 +35,10 @@
     @apply inline-flex items-center justify-center whitespace-nowrap rounded-full bg-slate-800/10 px-4 py-2 font-medium  dark:bg-white/10;
   }
   lite-youtube {
-    @apply !max-w-full overflow-hidden rounded-lg;
+    @apply !min-w-0 !max-w-none overflow-hidden before:!hidden;
+  }
+  [data-ntpc='YouTubeEmbed'] {
+    @apply aspect-video;
   }
   article > main img {
     @apply !rounded-lg;
